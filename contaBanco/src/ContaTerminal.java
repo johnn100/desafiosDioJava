@@ -18,8 +18,23 @@ public class ContaTerminal {
         System.out.println("Digite o saldo: ");
         Double saldo = scanner.nextDouble();
 
+        System.out.println("Deseja realizar saque? ");
+        int realizarSaque = scanner.nextInt();
 
-        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + conta + " e seu saldo R$ " + saldo + " já está disponível para saque.");
-        
+        if(realizarSaque == 1){
+            System.out.println("Digite o valor do saque: ");
+            Double saque = scanner.nextDouble();
+
+            double saldoAtual = saldo - saque;
+
+                if(saque <= saldo){
+                    System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + conta + " e seu saldo R$ " + saldo + " e está realizando um saque de R$ " + saque + " ficando um saldo na conta de R$ " + saldoAtual);
+                }else{
+                    System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + conta + " e seu saldo R$ " + saldo + " e está realizando um saque de R$ " + saque + " mas está sem saldo no momento");
+                }
+
+        } else {
+            System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + conta + " e seu saldo R$ " + saldo + " e está disponível para saque.");
+        }
     }
 }
