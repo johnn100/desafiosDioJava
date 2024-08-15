@@ -1,0 +1,14 @@
+// Abstração:
+/*Quando entendemos nosso requisito e preparamos todos os itens necessários para atender a demanda. */
+
+// Encapsulamento
+/*Quando coloca a palavra Private deixando privado o metodo somente para a classe e o com isso precisa-se criar os Get e Sett para ter acesso de outro metodo. */
+
+// Herança
+/* Permite que você defina uma classe filha que reutiliza (herda), estende ou modifica o comprotamento de uma classe pai.
+ * Utilizar o mesmo código para outras coisas, tipo conta corrente e poupança pode ser o mesmo. */
+
+// Polimorfismo
+/* Capacidade de um objeto poder se referenciado de várias formas. */
+
+/*Aquilo que só o pai sabe é PRIVATE, o que ele te contou e para mais ninguém é PROTECTED e o que seus vizinhos sabem é PUBLIC */
